@@ -1,0 +1,174 @@
+/* index.erb */
+
+body{
+	margin: 0;
+	padding: 0;
+	background: #030f20;
+}
+
+@font-face{
+	font-family: DarkFuture;
+	src: url('./fonts/dark_future/Dark_Future_Italic.ttf');
+}
+
+#main_container{
+	margin-left: 30%;
+	margin-top: 50px;
+	width: 582px;
+	background-image: url('./images/hyperspace.jpg');
+	height: 743px;
+	border: 3px solid lightblue;
+	box-shadow: 0px 0px 40px 10px #b9d0d84d;
+}
+
+#title_box{
+	position: relative;
+	text-align: center;
+	top: -24px;
+}
+
+#title{
+	margin: 25px 0px 0px 0px;
+	font-size: 50px;
+	line-height: 46px;
+	color: #bcded6cc;
+	background: #011501cc;
+	font-family: DarkFuture;
+	text-shadow: -5px 0px #dfdfcf33;
+}
+
+#content_container{
+	position: relative;
+	padding: 0px 30px 0px 10px;
+	height: 700px;
+	top: -48px;
+	background: #011501cc;
+	font-family: Futura;
+	color: antiquewhite;
+}
+
+/* home.erb */
+
+#intro_and_rules{
+
+}
+
+#rules_title{
+	position: relative;
+	top: 10px;
+	text-align: center;
+	font-family: Futura;
+
+}
+
+#rule_list{
+
+}
+
+#sub_rule_list{
+
+}
+
+#home_content_footer{
+	text-align: center;
+}
+
+#play_link{
+
+}
+
+#play_button{
+	position: relative;
+	bottom: 10px;
+	height: 40px;
+	width: 150px;
+	border: 2px outset silver;
+	border-top-right-radius: 50px;
+	border-top-left-radius: 50px;
+	background: #789c9c;
+	font-family: DarkFuture;
+	font-size: 28px;
+	color: #eded3f;
+	box-shadow: 0px 0px 8px 8px #add8e680;
+}
+
+/* play.erb */
+
+#spacer{
+
+}
+
+#gameboard_container{
+	position: relative;
+	top: -24px;
+	background: #011501cc;
+	height: 696px;
+	color: antiquewhite; /*temporary*/
+}
+
+.guess_slots_container{
+	display: inline-block;
+}
+
+.guess_slot{
+
+}
+
+.divider{
+	display: inline-block;
+}
+
+.hint_slots_container{
+	display: inline-block;
+}
+
+.hint_slot{
+
+}
+
+#code_selector_container{
+
+}
+
+#code_selector{
+
+}
+
+#current_guess_container{
+
+}
+
+.slot_container{
+	display: inline-block;
+	padding: 10px;
+	border: 1px solid blue;
+	border-radius: 50px;
+}
+
+.select_dropdown{
+	height: 30px;
+	width: 40px;
+	border: 1px solid blue;
+	border-radius: 40px;
+	text-align: center;
+	background: lightgray;
+	color: blue;
+}
+
+#guess_or_clear_container{
+
+}
+
+#guess_form{
+	display: inline-block;
+}
+
+#clear_form{
+	display: inline-block;
+}
+
+#clear_button{
+	display: inline-block;
+}
+
+/* gameover.erb */
