@@ -26,6 +26,7 @@ class Game
 
 	attr_accessor :hints
 	attr_reader :game_over
+	attr_reader :cracked
 	attr_reader :rows
 	attr_reader :turns_left
 	attr_reader :secret_code
@@ -38,12 +39,16 @@ class Game
 		@turns_left = 12
 		@colors = ['R', 'O', 'Y', 'G', 'B', 'V']
 		@game_over = false
+		@cracked = false
 	end
 
 	def code_guessed?(guess)
 		if guess == @secret_code
+			@cracked = true
 			@game_over = true
+			return true
 		end
+		return false
 	end
 
 	def add_hints(guess)
@@ -92,5 +97,11 @@ get '/guess' do
 end
 
 get '/gameover' do 
-	#stuff
+	if session[:game].cracked
+		win_or_lose = "Congratulations! You've cracked the code!"
+	else
+		win_or_lose = "You have failed to crack the code."
+	end
+	
+	erb :gameover, layout: :index, :locals => {:title => title, :game => session[:game], :win_or_lose => win_or_lose}
 end
