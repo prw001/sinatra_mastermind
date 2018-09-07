@@ -12,7 +12,7 @@ body{
 }
 
 #main_container{
-	margin-left: 30%;
+	margin-left: 32%;
 	margin-top: 50px;
 	width: 582px;
 	background-image: url('./images/hyperspace.jpg');
@@ -62,20 +62,8 @@ body{
 
 }
 
-#rule_list{
-
-}
-
-#sub_rule_list{
-
-}
-
 #home_content_footer{
 	text-align: center;
-}
-
-#play_link{
-
 }
 
 #play_button{
@@ -90,7 +78,20 @@ body{
 	font-family: DarkFuture;
 	font-size: 28px;
 	color: #eded3f;
-	box-shadow: 0px 0px 8px 8px #add8e680;
+}
+
+#play_button:hover{
+	box-shadow: 0px 0px 8px 4px #eded3f4d;
+	background: #528e8e;
+	color: #f2f22a;
+	cursor: pointer;
+}
+
+#play_button:active{
+	border: 2px inset silver;
+	background: #516d6d;
+	box-shadow: none;
+	color: #a9e833;
 }
 
 /* play.erb */
@@ -461,5 +462,19 @@ body{
 	font-size: 28px;
 	color: #2c1307;
 	background: #1dd61d;
+}
+
+#play_again_button:hover{
+	cursor: pointer;
+	box-shadow: 0px 0px 120px 6px #add2d8;
+	background: #1aa91a;
+	color: #301609;
+}
+
+#play_again_button:active{
+	border: 2px inset #92c5c4;
+	background: #0f4c0f;
+	color: #a5dddc;
+	box-shadow: 0px 0px 10px 6px #a9d5d3;
 }
 
